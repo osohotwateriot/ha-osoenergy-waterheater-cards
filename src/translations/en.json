@@ -1,0 +1,83 @@
+{
+    "editor": {
+        "form": {
+            "color_picker": {
+                "values": {
+                    "default": "Default color"
+                }
+            },
+            "info_picker": {
+                "values": {
+                    "default": "Default information",
+                    "name": "Name",
+                    "state": "State",
+                    "last-changed": "Last Changed",
+                    "last-updated": "Last Updated",
+                    "none": "None"
+                }
+            },
+            "layout_picker": {
+                "values": {
+                    "default": "Default layout",
+                    "vertical": "Vertical layout",
+                    "horizontal": "Horizontal layout"
+                }
+            },
+            "alignment_picker": {
+                "values": {
+                    "default": "Default alignment",
+                    "start": "Start",
+                    "end": "End",
+                    "center": "Center",
+                    "justify": "Justify"
+                }
+            }
+        },
+        "card": {
+            "generic": {
+                "hide_name": "Hide name?",
+                "hide_state": "Hide state?",
+                "hide_icon": "Hide icon?",
+                "icon_color": "Icon color",
+                "layout": "Layout",
+                "primary_info": "Primary information",
+                "secondary_info": "Secondary information",
+                "content_info": "Content",
+                "use_entity_picture": "Use entity picture?",
+                "sensor_water_40": "Sensor for Capacity Mixed Water 40",
+                "sensor_power_save": "Sensor for Power Save",
+                "show_v40_min_control": "Show V40 Min"
+            },
+            "commands": {
+                "water_heater": {
+                    "turn_on": "Force on",
+                    "turn_off": "Force off"
+                }
+            },
+            "template": {
+                "primary": "Primary information",
+                "secondary": "Secondary information",
+                "multiline_secondary": "Multiline secondary?",
+                "entity_extra": "Used in templates and actions",
+                "content": "Content"
+            },
+            "title": {
+                "title": "Title",
+                "subtitle": "Subtitle"
+            },
+            "water_heater": {
+                "commands": "Commands",
+                "turn_on": "Turn On",
+                "turn_off": "Turn Off",
+                "40_degrees_water": "40°C water",
+                "water_heater": "Water Heater",
+                "optimization_mode": "Optimization Mode",
+                "vacation_mode": "Vacation mode",
+                "full_utilization": "Full utilization",
+                "full_utilization_details": "Forces the heater on/off for 1 hour (unchecked) or until mim/max energy is reached (checked).",
+                "off": "Off",
+                "on": "On"
+            }
+        }
+    }
+}

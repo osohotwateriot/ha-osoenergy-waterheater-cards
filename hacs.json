@@ -1,0 +1,6 @@
+{
+    "name": "OSO Water Heater",
+    "homeassistant": "2022.5",
+    "render_readme": true,
+    "domains": ["water_heater"]
+}
