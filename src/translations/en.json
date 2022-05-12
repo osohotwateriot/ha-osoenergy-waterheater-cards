@@ -5,32 +5,6 @@
                 "values": {
                     "default": "Default color"
                 }
-            },
-            "info_picker": {
-                "values": {
-                    "default": "Default information",
-                    "name": "Name",
-                    "state": "State",
-                    "last-changed": "Last Changed",
-                    "last-updated": "Last Updated",
-                    "none": "None"
-                }
-            },
-            "layout_picker": {
-                "values": {
-                    "default": "Default layout",
-                    "vertical": "Vertical layout",
-                    "horizontal": "Horizontal layout"
-                }
-            },
-            "alignment_picker": {
-                "values": {
-                    "default": "Default alignment",
-                    "start": "Start",
-                    "end": "End",
-                    "center": "Center",
-                    "justify": "Justify"
-                }
             }
         },
         "card": {
@@ -46,7 +20,7 @@
                 "use_entity_picture": "Use entity picture?",
                 "sensor_water_40": "Sensor for Capacity Mixed Water 40",
                 "sensor_power_save": "Sensor for Power Save",
-                "show_v40_min_control": "Show V40 Min"
+                "show_v40_min_control": "Show minimum quantity of mixed water at 40°C"
             },
             "commands": {
                 "water_heater": {
@@ -70,13 +44,15 @@
                 "turn_on": "Turn On",
                 "turn_off": "Turn Off",
                 "40_degrees_water": "40°C water",
+                "v40_min_text": "Minimum quantity of mixed water at 40°C",
                 "water_heater": "Water Heater",
                 "optimization_mode": "Optimization Mode",
                 "vacation_mode": "Vacation mode",
                 "full_utilization": "Full utilization",
                 "full_utilization_details": "Forces the heater on/off for 1 hour (unchecked) or until mim/max energy is reached (checked).",
                 "off": "Off",
-                "on": "On"
+                "on": "On",
+                "liters": "Liters"
             }
         }
     }

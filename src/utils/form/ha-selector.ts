@@ -1,7 +1,4 @@
-import { OSOActionSelector } from "./custom/ha-selector-oso-energy-action";
 import { OSOColorSelector } from "./custom/ha-selector-oso-energy-color";
-import { OSOInfoSelector } from "./custom/ha-selector-oso-energy-info";
-import { OSOAlignementSelector } from "./custom/ha-selector-oso-energy-alignment";
 
 export type Selector =
     | AddonSelector
@@ -21,10 +18,7 @@ export type Selector =
     | IconSelector
     | MediaSelector
     | ThemeSelector
-    | OSOColorSelector
-    | OSOInfoSelector
-    | OSOActionSelector
-    | OSOAlignementSelector;
+    | OSOColorSelector;
 
 export interface EntitySelector {
     entity: {

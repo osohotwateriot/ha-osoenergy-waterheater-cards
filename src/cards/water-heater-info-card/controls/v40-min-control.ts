@@ -7,6 +7,7 @@ import "../../../shared/slider";
 import { getV40MaxLevel, getV40Min, getV40MinLevel } from "../utils";
 import { debounce } from "custom-card-helpers";
 import { DEBOUNCE_TIMEOUT } from "../../../const";
+import setupCustomlocalize from "../../../localize";
 
 @customElement("oso-energy-v40-min")
 export class V40MinItem extends LitElement {
@@ -39,18 +40,23 @@ export class V40MinItem extends LitElement {
     }
 
     protected render(): TemplateResult {
+        const customLocalize = setupCustomlocalize(this.hass!);
+
         const value = getV40Min(this.entity);
         const v40_min = getV40MinLevel(this.entity);
         const v40_max = getV40MaxLevel(this.entity);
 
-        return html` <div class="profile-label">V40 Min</div>
+        const v40MinText = customLocalize("editor.card.water_heater.v40_min_text");
+        const litersText = customLocalize("editor.card.water_heater.liters");
+
+        return html` <div class="profile-label">${v40MinText}</div>
             <oso-energy-slider
                 .value=${value}
                 .disabled=${!isAvailable(this.entity)}
                 .showActive=${true}
                 .showIndicator=${true}
                 .showValue=${true}
-                .label=${"Liters"}
+                .label=${litersText}
                 .min=${v40_min}
                 .max=${v40_max}
                 @change=${this.onChange}
